@@ -29,6 +29,8 @@ class Company {
        companyContainer.addEventListener("click", this.handleIndexClick)
    }
 
+   static find = (id) => this.all.find(company => company.data.id == id)
+
    static handleIndexClick = (e) => {
        if (e.target.tagName == "IMG") {
            const id = e.target.closest(".company-card").dataset.id
