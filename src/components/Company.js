@@ -26,6 +26,7 @@ class Company {
        companyContainer.classList.add("company-container")
        document.getElementById("main").appendChild(companyContainer)
        this.all.forEach(company => company.renderCard())
+       companyContainer.addEventListener("click", () => console.log("watches"))
    }
     
 
