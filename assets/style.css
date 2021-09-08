@@ -1,8 +1,12 @@
 body {
-    background-color: black;
+    background-color: gray;
 }
 
 #company-container {
     color: white;
     font-style: italic;
+}
+
+img:hover {
+    cursor: pointer;
 }
