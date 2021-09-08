@@ -7,7 +7,12 @@ class Company {
     }
 
     renderShow = () => {
-        console.log(this)
+        const { logo, description, name} = this.data
+        document.getElementById("main").innerHTML = `
+        <div class="show">
+           <img src=${logo} alt=${name} width="250" height="200"/>
+           <p>${description}<p>
+        </div>`
     }
 
     renderCard = () => {

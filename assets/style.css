@@ -21,3 +21,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.show {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
