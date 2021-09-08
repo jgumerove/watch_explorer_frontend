@@ -9,6 +9,7 @@ function getCompanies() {
             const companyMarkup = `
             <div data-id=${company.id}>
               <h3>${company.name}</h3>
+              <img src=${company.logo} height="200" width="250">
             </div>
             <br><br>
             `
