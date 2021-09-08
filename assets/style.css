@@ -10,3 +10,8 @@ body {
 img:hover {
     cursor: pointer;
 }
+
+.title {
+    color: white;
+    text-align: center;
+}
