@@ -11,7 +11,7 @@ class Company {
         document.querySelector(".company-container").innerHTML += `
         <div class="company-card">
           <p class="title">${name}</p>
-          <img src=${logo} alt=${name}/>
+          <img src=${logo} alt=${name} width="250" height="200"/>
         </div>`
     }
 
