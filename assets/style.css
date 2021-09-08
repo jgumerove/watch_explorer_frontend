@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-#company-container {
+.company-container {
     color: white;
     font-style: italic;
 }
