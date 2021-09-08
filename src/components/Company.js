@@ -6,6 +6,10 @@ class Company {
         this.constructor.all.push(this)
     }
 
+    renderShow = () => {
+        console.log(this)
+    }
+
     renderCard = () => {
         const { name, logo, id } = this.data
         document.querySelector(".company-container").innerHTML += `
@@ -34,7 +38,7 @@ class Company {
    static handleIndexClick = (e) => {
        if (e.target.tagName == "IMG") {
            const id = e.target.closest(".company-card").dataset.id
-           console.log(id)
+           this.find(id).renderShow()
        }
    }
     
