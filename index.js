@@ -1,4 +1,5 @@
 const api = "http://localhost:3000/companies"
 
-console.log(fetch(api)
-.then(response => response.json()))
+fetch(api)
+.then(response => response.json())
+.then(companies => console.log(companies))
