@@ -35,8 +35,10 @@ class Company {
 
    static renderIndex = () => {
        const companyContainer = document.createElement("div")
+       const main = document.getElementById("main")
+       main.innerHTML = ""
        companyContainer.classList.add("company-container")
-       document.getElementById("main").appendChild(companyContainer)
+       main.appendChild(companyContainer)
        this.all.forEach(company => company.renderCard())
        companyContainer.addEventListener("click", this.handleIndexClick)
    }
