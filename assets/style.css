@@ -39,3 +39,11 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.company-card {
+    display: inline-block;
+}
+
+#main {
+    text-align:center;
+}
