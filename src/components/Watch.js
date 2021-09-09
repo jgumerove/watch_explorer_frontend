@@ -9,7 +9,12 @@ class Watch {
         document.querySelector(".container").innerHTML += `
         <div class="card">
           <img src=${imageUrl} alt=${collection} width="200" height="250"/>
-          <h1>${collection}<h1>
+          <p>Collection: ${collection}</p>
+          <p>Year: ${year}</p>
+          <p>Type: ${watchType}</p>
+          <p>Band Material: ${bandMaterial}</p>
+          <p>Price: $ ${price}</p>
+          <p>Movement: ${movement}</p>
         </div>
         `
     }
