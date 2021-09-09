@@ -4,4 +4,8 @@ class Watch {
         this.data = data
     }
 
+    render = () => {
+        console.log("rendering watches")
+    }
+
 }

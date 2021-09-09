@@ -13,10 +13,12 @@ class Company {
         <div class="show">
            <img src=${logo} alt=${name} width="250" height="200"/>
            <p>${description}<p>
+           <div class="container"></div>
         </div>
         <button id="goBack">Return to Main</button>
         `
         document.getElementById("goBack").addEventListener("click", Company.renderIndex)
+        this.watches.forEach(watch => watch.render())
     }
 
     renderCard = () => {
