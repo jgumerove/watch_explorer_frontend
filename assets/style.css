@@ -15,8 +15,13 @@ button:hover {
     cursor: pointer;
 }
 
-.title {
+.header {
     color: white;
+    text-align: center;
+}
+
+.title {
+    color: goldenrod;
     text-align: center;
 }
 
