@@ -3,6 +3,7 @@ class Company {
     static all = []
     constructor(data) {
         this.data = data
+        this.watches = this.data.watches.map(watch => new Watch(watch))
         this.constructor.all.push(this)
     }
 
