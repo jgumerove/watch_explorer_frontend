@@ -5,7 +5,7 @@ class Watch {
     }
 
     render = () => {
-        const { imageUrl, collection, year, watchType, bandMaterial, price, movement } = this.data
+        const { imageUrl, collection, year, watchType, bandMaterial, price, movement, username } = this.data
         document.querySelector(".container").innerHTML += `
         <div class="card">
           <img src=${imageUrl} alt=${collection} width="200" height="250"/>
@@ -15,6 +15,7 @@ class Watch {
           <p>Band Material: ${bandMaterial}</p>
           <p>Price: $ ${price}</p>
           <p>Movement: ${movement}</p>
+          <p>Owner: ${username}</p>
         </div>
         `
     }
