@@ -37,9 +37,9 @@ class Company {
     }
 
    static renderIndex = () => {
-       const companyContainer = document.createElement("div")
        const main = document.getElementById("main")
        main.innerHTML = ""
+       const companyContainer = document.createElement("div")
        companyContainer.classList.add("company-container")
        main.appendChild(companyContainer)
        this.all.forEach(company => company.renderCard())
@@ -58,6 +58,7 @@ class Company {
 
     static getCompanies = () => {
         api.getCompanies().then(companies => {
+            Company.all = []
             companies.forEach(company => Company.addCompany(company))
             this.renderIndex()
         })

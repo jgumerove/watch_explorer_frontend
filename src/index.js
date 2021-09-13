@@ -6,6 +6,7 @@ document.querySelector("form").addEventListener("submit", handleUserSubmit)
 
 function handleUserSubmit(e){
     e.preventDefault()
+    document.getElementById("main").innerHTML = ""
     api.findOrCreateUser(e.target.username.value).then(userData => {
         user = userData
         Company.getCompanies()
